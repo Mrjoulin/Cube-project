@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a48df5c5-394a-4691-afb1-30fc33f04f0f" name="Default" comment="" />
+    <list default="true" id="a48df5c5-394a-4691-afb1-30fc33f04f0f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cube project/Main.class" afterPath="$PROJECT_DIR$/out/production/Cube project/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,12 +23,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="5911" column="140" lean-forward="false" selection-start-line="5911" selection-start-column="140" selection-end-line="5911" selection-end-column="140" />
+            <state relative-caret-position="276">
+              <caret line="2315" column="181" lean-forward="false" selection-start-line="2315" selection-start-column="181" selection-end-line="2315" selection-end-column="181" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
                 <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-                <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
                 <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
                 <element signature="method#cross#0;class#Main#0" expanded="false" />
                 <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -80,6 +85,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -98,7 +106,7 @@
     <option name="height" value="741" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -111,28 +119,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Cube project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cube project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cube project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cube project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
@@ -277,18 +264,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25747508" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4214047" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18209408" sideWeight="0.49335548" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19119878" sideWeight="0.49335548" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15326253" sideWeight="0.50664455" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3986711" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15326253" sideWeight="0.50664455" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -306,72 +293,72 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>3462</line>
+          <line>3498</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>3302</line>
+          <line>3338</line>
           <properties />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>3254</line>
+          <line>3290</line>
           <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>3138</line>
+          <line>3174</line>
           <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>3021</line>
+          <line>3057</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>2786</line>
+          <line>2822</line>
           <properties />
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>340</line>
+          <line>376</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>5775</line>
+          <line>5812</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>5821</line>
+          <line>5859</line>
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>5851</line>
+          <line>5889</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>5876</line>
+          <line>5914</line>
           <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="86" />
+      <option name="time" value="92" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -382,8 +369,62 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
+            <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
+            <element signature="method#cross#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_orange_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_orange_green#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_orange_green#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_rad_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_rad_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_rad_green#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_rad_green#0;class#Main#0" expanded="false" />
+            <element signature="method#OLL#0;class#Main#0" expanded="false" />
+            <element signature="method#PLL#0;class#Main#0" expanded="false" />
+            <element signature="method#U#0;class#Main#0" expanded="false" />
+            <element signature="method#Ux#0;class#Main#0" expanded="false" />
+            <element signature="method#F#0;class#Main#0" expanded="false" />
+            <element signature="method#Fx#0;class#Main#0" expanded="false" />
+            <element signature="method#R#0;class#Main#0" expanded="false" />
+            <element signature="method#Rx#0;class#Main#0" expanded="false" />
+            <element signature="method#L#0;class#Main#0" expanded="false" />
+            <element signature="method#Lx#0;class#Main#0" expanded="false" />
+            <element signature="method#B#0;class#Main#0" expanded="false" />
+            <element signature="method#Bx#0;class#Main#0" expanded="false" />
+            <element signature="method#D#0;class#Main#0" expanded="false" />
+            <element signature="method#Dx#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_orange_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_orange_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_orange_blue_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_orange_blue_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_blue_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_blue_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_orange_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_orange_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_orange_blue_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_orange_blue_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_blue_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_blue_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#Scrambl#0;class#Main#0" expanded="false" />
+            <element signature="method#sout#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61956">
+          <caret line="3442" column="24" lean-forward="false" selection-start-line="3442" selection-start-column="24" selection-end-line="3442" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
+            <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -436,8 +477,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -490,8 +531,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -544,8 +585,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -598,8 +639,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -652,8 +693,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -706,8 +747,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -760,8 +801,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -814,8 +855,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -868,8 +909,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -922,8 +963,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -976,8 +1017,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -1030,8 +1071,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -1084,8 +1125,170 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
+            <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
+            <element signature="method#cross#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_orange_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_orange_green#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_orange_green#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_rad_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_rad_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_rad_green#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_rad_green#0;class#Main#0" expanded="false" />
+            <element signature="method#OLL#0;class#Main#0" expanded="false" />
+            <element signature="method#PLL#0;class#Main#0" expanded="false" />
+            <element signature="method#U#0;class#Main#0" expanded="false" />
+            <element signature="method#Ux#0;class#Main#0" expanded="false" />
+            <element signature="method#F#0;class#Main#0" expanded="false" />
+            <element signature="method#Fx#0;class#Main#0" expanded="false" />
+            <element signature="method#R#0;class#Main#0" expanded="false" />
+            <element signature="method#Rx#0;class#Main#0" expanded="false" />
+            <element signature="method#L#0;class#Main#0" expanded="false" />
+            <element signature="method#Lx#0;class#Main#0" expanded="false" />
+            <element signature="method#B#0;class#Main#0" expanded="false" />
+            <element signature="method#Bx#0;class#Main#0" expanded="false" />
+            <element signature="method#D#0;class#Main#0" expanded="false" />
+            <element signature="method#Dx#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_orange_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_orange_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_orange_blue_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_orange_blue_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_blue_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_blue_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_orange_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_orange_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_orange_blue_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_orange_blue_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_blue_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_blue_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#Scrambl#0;class#Main#0" expanded="false" />
+            <element signature="method#sout#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
+            <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
+            <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
+            <element signature="method#cross#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_orange_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_orange_green#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_orange_green#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_rad_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_rad_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_rad_green#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_rad_green#0;class#Main#0" expanded="false" />
+            <element signature="method#OLL#0;class#Main#0" expanded="false" />
+            <element signature="method#PLL#0;class#Main#0" expanded="false" />
+            <element signature="method#U#0;class#Main#0" expanded="false" />
+            <element signature="method#Ux#0;class#Main#0" expanded="false" />
+            <element signature="method#F#0;class#Main#0" expanded="false" />
+            <element signature="method#Fx#0;class#Main#0" expanded="false" />
+            <element signature="method#R#0;class#Main#0" expanded="false" />
+            <element signature="method#Rx#0;class#Main#0" expanded="false" />
+            <element signature="method#L#0;class#Main#0" expanded="false" />
+            <element signature="method#Lx#0;class#Main#0" expanded="false" />
+            <element signature="method#B#0;class#Main#0" expanded="false" />
+            <element signature="method#Bx#0;class#Main#0" expanded="false" />
+            <element signature="method#D#0;class#Main#0" expanded="false" />
+            <element signature="method#Dx#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_orange_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_orange_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_orange_blue_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_orange_blue_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_blue_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_blue_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_orange_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_orange_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_orange_blue_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_orange_blue_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_blue_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_blue_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#Scrambl#0;class#Main#0" expanded="false" />
+            <element signature="method#sout#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
+            <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
+            <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
+            <element signature="method#cross#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_orange_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_orange_green#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_orange_green#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_rad_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_rad_blue#0;class#Main#0" expanded="false" />
+            <element signature="method#findF2L_rad_green#0;class#Main#0" expanded="false" />
+            <element signature="method#F2L_rad_green#0;class#Main#0" expanded="false" />
+            <element signature="method#OLL#0;class#Main#0" expanded="false" />
+            <element signature="method#PLL#0;class#Main#0" expanded="false" />
+            <element signature="method#U#0;class#Main#0" expanded="false" />
+            <element signature="method#Ux#0;class#Main#0" expanded="false" />
+            <element signature="method#F#0;class#Main#0" expanded="false" />
+            <element signature="method#Fx#0;class#Main#0" expanded="false" />
+            <element signature="method#R#0;class#Main#0" expanded="false" />
+            <element signature="method#Rx#0;class#Main#0" expanded="false" />
+            <element signature="method#L#0;class#Main#0" expanded="false" />
+            <element signature="method#Lx#0;class#Main#0" expanded="false" />
+            <element signature="method#B#0;class#Main#0" expanded="false" />
+            <element signature="method#Bx#0;class#Main#0" expanded="false" />
+            <element signature="method#D#0;class#Main#0" expanded="false" />
+            <element signature="method#Dx#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_orange_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_green_orange_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_orange_blue_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_orange_blue_right#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_blue_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#couple_blue_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_orange_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_green_orange_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_orange_blue_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_orange_blue_right#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_blue_rad_left#0;class#Main#0" expanded="false" />
+            <element signature="method#tripod_blue_rad_right#0;class#Main#0" expanded="false" />
+            <element signature="method#Scrambl#0;class#Main#0" expanded="false" />
+            <element signature="method#sout#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
+            <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />
@@ -1142,12 +1345,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="5911" column="140" lean-forward="false" selection-start-line="5911" selection-start-column="140" selection-end-line="5911" selection-end-column="140" />
+        <state relative-caret-position="276">
+          <caret line="2315" column="181" lean-forward="false" selection-start-line="2315" selection-start-column="181" selection-end-line="2315" selection-end-column="181" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Filling_in#0;class#Main#0" expanded="false" />
             <element signature="method#GenerateScrambl#0;class#Main#0" expanded="false" />
-            <element signature="method#Updateedge#0;class#Main#0" expanded="false" />
             <element signature="method#Updatecorners#0;class#Main#0" expanded="false" />
             <element signature="method#cross#0;class#Main#0" expanded="false" />
             <element signature="method#findF2L_orange_blue#0;class#Main#0" expanded="false" />

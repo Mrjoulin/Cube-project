@@ -41,8 +41,14 @@ public class Main {
         //Массив углов
         int[][] corners = new int[8][3];
         //Разборка куба
-        GenerateScrambl(white, green, yellow, blue, orange, rad, scrambl);
-        scrambl = new StringBuilder();
+        System.out.println("Введите 0 - сли хотите сами ввести разборку, или 1 - если хотите автоматическую разборку");
+        int nextInt = sc.nextInt();
+        if (nextInt == 0){
+            Filling_in(white, green, yellow, blue, orange, rad, sc);
+        }else {
+            GenerateScrambl(white, green, yellow, blue, orange, rad, scrambl);
+            scrambl = new StringBuilder();
+        }
         //Заполнение массива рёбер
         Updateedge(white, green, yellow, blue, orange, rad, edge);
         //Заполнение массива углов
@@ -63,6 +69,36 @@ public class Main {
         sout(white, green, yellow, blue, orange, rad, scrambl);
     }
     //Разборка куба
+    //Ввод разборки с клавиатуры:
+    private static void Filling_in(int[][] white, int[][] green, int[][] yellow, int[][] blue, int[][] orange, int[][] rad, Scanner sc){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                blue[i][j] = sc.nextInt();
+            }
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                orange[i][j] = sc.nextInt();
+            }
+            for (int j = 0; j < 3; j++) {
+                white[i][j] = sc.nextInt();
+            }
+            for (int j = 0; j < 3; j++) {
+                rad[i][j] = sc.nextInt();
+            }
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                green[i][j] = sc.nextInt();
+            }
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                yellow[i][j] = sc.nextInt();
+            }
+        }
+    }
+    //Автоматическая разборка:
     private static void GenerateScrambl(int[][] white, int[][] green, int[][] yellow, int[][] blue, int[][] orange, int[][] rad, StringBuilder scrambl){
         //Собранный куб
         for (int k = 0; k < 6; k++) {
@@ -451,11 +487,11 @@ public class Main {
                                 break;
                             }
                             if (edge[8][1] == 5 && edge[9][1] == 3){//совпали красный и синий
-                                R(rad, yellow, white, green, blue, scrambl);
+                                F(green, yellow, white, orange, rad, scrambl);
                                 D(yellow, blue, green, orange, rad, scrambl);
-                                Rx(rad, yellow, white, green, blue, scrambl);
+                                Fx(green, yellow, white, orange, rad, scrambl);
                                 Dx(yellow, blue, green, orange, rad, scrambl);
-                                R(rad, yellow, white, green, blue, scrambl);
+                                F(green, yellow, white, orange, rad, scrambl);
                                 Updateedge(white, green, yellow, blue, orange, rad, edge);
                                 break;
                             }
@@ -1883,7 +1919,7 @@ public class Main {
                     couple_blue_rad_right(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 3) && one == 5 && two == 3 && three == 2 && four == 5 && five == 3) {//левая трёхходовка
+                if ((i == 3 && j == 3) && one == 5 && two == 3 && three == 2 && four == 5 && five == 3) {
                     Ux(white, green, blue, orange, rad, scrambl);
                     R(rad, yellow, white, green, blue, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
@@ -1902,7 +1938,7 @@ public class Main {
                     couple_blue_rad_right(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 0) && one == 5 && two == 3 && three == 2 && four == 5 && five == 3) {//левая трёхходовка
+                if ((i == 3 && j == 0) && one == 5 && two == 3 && three == 2 && four == 5 && five == 3) {
                     Ux(white, green, blue, orange, rad, scrambl);
                     R(rad, yellow, white, green, blue, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
@@ -1911,7 +1947,7 @@ public class Main {
                     couple_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 0) && one == 5 && two == 3 && three == 2 && four == 3 && five == 5) {//левая трёхходовка
+                if ((i == 3 && j == 0) && one == 5 && two == 3 && three == 2 && four == 3 && five == 5) {
                     Ux(white, green, blue, orange, rad, scrambl);
                     R(rad, yellow, white, green, blue, scrambl);
                     Ux(white, green, blue, orange, rad, scrambl);
@@ -1930,7 +1966,7 @@ public class Main {
                     tripod_blue_rad_right(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 2) && one == 3 && two == 2 && three == 5 && four == 5 && five == 3) {//правая пара
+                if ((i == 3 && j == 2) && one == 3 && two == 2 && three == 5 && four == 5 && five == 3) {
                     R(rad, yellow, white, green, blue, scrambl);
                     Ux(white, green, blue, orange, rad, scrambl);
                     Rx(rad, yellow, white, green, blue, scrambl);
@@ -1942,7 +1978,7 @@ public class Main {
                     couple_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 1) && one == 5 && two == 3 && three == 2 && four == 3 && five == 5) {//левая пара
+                if ((i == 3 && j == 1) && one == 5 && two == 3 && three == 2 && four == 3 && five == 5) {
                     Fx(green, yellow, white, orange, rad, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
                     F(green, yellow, white, orange, rad, scrambl);
@@ -1951,10 +1987,10 @@ public class Main {
                     U(white, green, blue, orange, rad, scrambl);
                     F(green, yellow, white, orange, rad, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
-                    couple_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
+                    couple_blue_rad_right(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 2) && one == 5 && two == 3 && three == 2 && four == 3 && five == 5) {//левая пара
+                if ((i == 3 && j == 2) && one == 5 && two == 3 && three == 2 && four == 3 && five == 5) {
                     Fx(green, yellow, white, orange, rad, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
                     F(green, yellow, white, orange, rad, scrambl);
@@ -1967,7 +2003,7 @@ public class Main {
                     couple_blue_rad_right(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 1) && one == 3 && two == 2 && three == 5 && four == 5 && five == 3) {//левая пара
+                if ((i == 3 && j == 1) && one == 3 && two == 2 && three == 5 && four == 5 && five == 3) {
                     R(rad, yellow, white, green, blue, scrambl);
                     Ux(white, green, blue, orange, rad, scrambl);
                     Rx(rad, yellow, white, green, blue, scrambl);
@@ -1980,7 +2016,7 @@ public class Main {
                     couple_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 2) && one == 5 && two == 3 && three == 2 && four == 5 && five == 3) {//левая пара
+                if ((i == 3 && j == 2) && one == 5 && two == 3 && three == 2 && four == 5 && five == 3) {
                     R(rad, yellow, white, green, blue, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
                     Rx(rad, yellow, white, green, blue, scrambl);
@@ -1992,14 +2028,14 @@ public class Main {
                     couple_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 1) && one == 3 && two == 2 && three == 5 && four == 3 && five == 5) {//левая пара
+                if ((i == 3 && j == 1) && one == 3 && two == 2 && three == 5 && four == 3 && five == 5) {
                     R(rad, yellow, white, green, blue, scrambl);
                     Ux(white, green, blue, orange, rad, scrambl);
                     Rx(rad, yellow, white, green, blue, scrambl);
                     tripod_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 2) && one == 2 && two == 5 && three == 3 && four == 3 && five == 5) {//левая пара
+                if ((i == 3 && j == 2) && one == 2 && two == 5 && three == 3 && four == 3 && five == 5) {
                     Fx(green, yellow, white, orange, rad, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
@@ -2007,7 +2043,7 @@ public class Main {
                     tripod_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 1) && one == 2 && two == 5 && three == 3 && four == 5 && five == 3) {//левая пара
+                if ((i == 3 && j == 1) && one == 2 && two == 5 && three == 3 && four == 5 && five == 3) {
                     R(rad, yellow, white, green, blue, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
@@ -2017,7 +2053,7 @@ public class Main {
                     tripod_blue_rad_right(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 1 && j == 2) && one == 2 && two == 5 && three == 3 && four == 3 && five == 5) {//левая пара
+                if ((i == 1 && j == 2) && one == 2 && two == 5 && three == 3 && four == 3 && five == 5) {
                     R(rad, yellow, white, green, blue, scrambl);
                     Ux(white, green, blue, orange, rad, scrambl);
                     Rx(rad, yellow, white, green, blue, scrambl);
@@ -2030,7 +2066,7 @@ public class Main {
                     couple_blue_rad_right(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 2 && j == 1) && one == 2 && two == 5 && three == 3 && four == 5 && five == 3) {//левая пара
+                if ((i == 2 && j == 1) && one == 2 && two == 5 && three == 3 && four == 5 && five == 3) {
                     R(rad, yellow, white, green, blue, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
@@ -2038,14 +2074,14 @@ public class Main {
                     couple_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 0 && j == 1) && one == 2 && two == 5 && three == 3 && four == 5 && five == 3) {//левая пара
+                if ((i == 0 && j == 1) && one == 2 && two == 5 && three == 3 && four == 5 && five == 3) {
                     R(rad, yellow, white, green, blue, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
                     Rx(rad, yellow, white, green, blue, scrambl);
                     couple_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 0 && j == 2) && one == 2 && two == 5 && three == 3 && four == 3 && five == 5) {//левая пара
+                if ((i == 0 && j == 2) && one == 2 && two == 5 && three == 3 && four == 3 && five == 5) {
                     R(rad, yellow, white, green, blue, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
                     Rx(rad, yellow, white, green, blue, scrambl);
@@ -2053,7 +2089,7 @@ public class Main {
                     tripod_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 1) && one == 2 && two == 5 && three == 3 && four == 3 && five == 5) {//левая пара
+                if ((i == 3 && j == 1) && one == 2 && two == 5 && three == 3 && four == 3 && five == 5) {
                     F(green, yellow, white, orange, rad, scrambl);
                     U(white, green, blue, orange, rad, scrambl);
                     R(rad, yellow, white, green, blue, scrambl);
@@ -2064,7 +2100,7 @@ public class Main {
                     couple_blue_rad_left(edge, corners, white, green, yellow, blue, orange, rad, scrambl);
                     break;
                 }
-                if ((i == 3 && j == 2) && one == 2 && two == 5 && three == 3 && four == 5 && five == 3) {//левая пара
+                if ((i == 3 && j == 2) && one == 2 && two == 5 && three == 3 && four == 5 && five == 3) {
                     R(rad, yellow, white, green, blue, scrambl);
                     Ux(white, green, blue, orange, rad, scrambl);
                     Rx(rad, yellow, white, green, blue, scrambl);
@@ -4967,7 +5003,7 @@ public class Main {
                 R(rad, yellow, white, green, blue, scrambl);
                 break;
             }
-            if (edge[0][1] == 1 && edge[1][1] == 4 && edge[2][1] == 5 && edge[3][1] == 3 && corners[0][1] == 4 && corners[0][2] == 1 && corners[1][1] == 3 && corners[1][2] == 5 && corners[2][1] == 5 && corners[2][2] == 1 && corners[3][1] == 1 && corners[3][2] == 4) {
+            if (edge[0][1] == 1 && edge[1][1] == 4 && edge[2][1] == 5 && edge[3][1] == 3 && corners[0][1] == 4 && corners[0][2] == 3 && corners[1][1] == 3 && corners[1][2] == 5 && corners[2][1] == 5 && corners[2][2] == 1 && corners[3][1] == 1 && corners[3][2] == 4) {
                 R(rad, yellow, white, green, blue, scrambl);
                 R(rad, yellow, white, green, blue, scrambl);
                 Fx(green, yellow, white, orange, rad, scrambl);
@@ -5773,48 +5809,50 @@ public class Main {
         int counter = 0;
         int hatch = 0;
         int dlaseba = 0;
-        for (int i = 0; i < scrambl.length(); i++) {
-            if (scrambl.charAt(i) != ' ') {
-                if (lastLetter == scrambl.charAt(i)) {
-                    if (((int) scrambl.charAt(i + 1) == 39 && scrambl.charAt(i - 2) == lastLetter) || (scrambl.charAt(i + 1) == ' ' && (int) scrambl.charAt(i - 2) == 39)) {
-                        if ((int) scrambl.charAt(i + 1) == 39 && scrambl.charAt(i - 2) == lastLetter) {
-                            counter--;
-                            newScrambl.deleteCharAt(counter);
-                            counter--;
-                            newScrambl.deleteCharAt(counter);
-                            counter--;
-                            newScrambl.deleteCharAt(counter);
-                            i++;
-                            continue;
+        for (int n = 0; n < 2; n++) {
+            for (int i = 0; i < scrambl.length(); i++) {
+                if (scrambl.charAt(i) != ' ') {
+                    if (lastLetter == scrambl.charAt(i)) {
+                        if (((int) scrambl.charAt(i + 1) == 39 && scrambl.charAt(i - 2) == lastLetter) || (scrambl.charAt(i + 1) == ' ' && (int) scrambl.charAt(i - 2) == 39)) {
+                            if ((int) scrambl.charAt(i + 1) == 39 && scrambl.charAt(i - 2) == lastLetter) {
+                                counter--;
+                                newScrambl.deleteCharAt(counter);
+                                counter--;
+                                newScrambl.deleteCharAt(counter);
+                                counter--;
+                                newScrambl.deleteCharAt(counter);
+                                i++;
+                                continue;
+                            } else {
+                                newScrambl.deleteCharAt(counter - 1);
+                                counter--;
+                                newScrambl.deleteCharAt(counter - 1);
+                                counter--;
+                                newScrambl.deleteCharAt(counter - 1);
+                                counter--;
+                                newScrambl.deleteCharAt(counter - 1);
+                                counter--;
+                                continue;
+                            }
                         } else {
-                            newScrambl.deleteCharAt(counter - 1);
-                            counter--;
-                            newScrambl.deleteCharAt(counter - 1);
-                            counter--;
-                            newScrambl.deleteCharAt(counter - 1);
-                            counter--;
-                            newScrambl.deleteCharAt(counter - 1);
-                            counter--;
+                            newScrambl.append(scrambl.charAt(i));
+                            counter++;
                             continue;
                         }
-                    } else {
-                        newScrambl.append(scrambl.charAt(i));
-                        counter++;
-                        continue;
                     }
-                }
-                if ((int)scrambl.charAt(i) != 39){
-                    dlaseba++;
-                    lastLetter = scrambl.charAt(i);
+                    if ((int) scrambl.charAt(i) != 39) {
+                        dlaseba++;
+                        lastLetter = scrambl.charAt(i);
+                        newScrambl.append(scrambl.charAt(i));
+                    }
+                    if ((int) scrambl.charAt(i) == 39) {
+                        newScrambl.append(scrambl.charAt(i));
+                    }
+                } else {
                     newScrambl.append(scrambl.charAt(i));
                 }
-                if ((int)scrambl.charAt(i) == 39){
-                    newScrambl.append(scrambl.charAt(i));
-                }
-            }else {
-                newScrambl.append(scrambl.charAt(i));
+                counter++;
             }
-            counter++;
         }
         System.out.println(dlaseba);
         lastLetter = ' ';

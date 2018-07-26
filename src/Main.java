@@ -41,7 +41,7 @@ public class Main {
         //Массив углов
         int[][] corners = new int[8][3];
         //Разборка куба
-        System.out.println("Введите 0 - сли хотите сами ввести разборку, или 1 - если хотите автоматическую разборку");
+        System.out.println("Введите 0 - если хотите сами ввести разборку, или 1 - если хотите автоматическую разборку");
         int nextInt = sc.nextInt();
         if (nextInt == 0){
             Filling_in(white, green, yellow, blue, orange, rad, sc);
@@ -3192,7 +3192,7 @@ public class Main {
                         Updatecorners(white, green, yellow, blue, orange, rad, corners);
                         break;
                     }
-                    if (corners[0][2] == 0 && corners[1][1] == 0 && corners[2][1] == 0 && corners[3][1] == 0){//Молния
+                    if (corners[0][1] == 0 && corners[1][0] == 0 && corners[2][1] == 0 && corners[3][1] == 0){//Молния
                         F(green, yellow, white, orange, rad, scrambl);
                         R(rad, yellow, white, green, blue, scrambl);
                         U(white, green, blue, orange, rad, scrambl);
@@ -5809,10 +5809,10 @@ public class Main {
         int counter = 0;
         int hatch = 0;
         int dlaseba = 0;
-        for (int n = 0; n < 2; n++) {
-            for (int i = 0; i < scrambl.length(); i++) {
-                if (scrambl.charAt(i) != ' ') {
-                    if (lastLetter == scrambl.charAt(i)) {
+        for (int i = 0; i < scrambl.length(); i++) {
+            if (scrambl.charAt(i) != ' ') {
+                if (lastLetter == scrambl.charAt(i)) {
+                    if (i > 1) {
                         if (((int) scrambl.charAt(i + 1) == 39 && scrambl.charAt(i - 2) == lastLetter) || (scrambl.charAt(i + 1) == ' ' && (int) scrambl.charAt(i - 2) == 39)) {
                             if ((int) scrambl.charAt(i + 1) == 39 && scrambl.charAt(i - 2) == lastLetter) {
                                 counter--;
@@ -5840,19 +5840,19 @@ public class Main {
                             continue;
                         }
                     }
-                    if ((int) scrambl.charAt(i) != 39) {
-                        dlaseba++;
-                        lastLetter = scrambl.charAt(i);
-                        newScrambl.append(scrambl.charAt(i));
-                    }
-                    if ((int) scrambl.charAt(i) == 39) {
-                        newScrambl.append(scrambl.charAt(i));
-                    }
-                } else {
+                }
+                if ((int) scrambl.charAt(i) != 39) {
+                    dlaseba++;
+                    lastLetter = scrambl.charAt(i);
                     newScrambl.append(scrambl.charAt(i));
                 }
-                counter++;
+                if ((int) scrambl.charAt(i) == 39) {
+                    newScrambl.append(scrambl.charAt(i));
+                }
+            } else {
+                newScrambl.append(scrambl.charAt(i));
             }
+            counter++;
         }
         System.out.println(dlaseba);
         lastLetter = ' ';
